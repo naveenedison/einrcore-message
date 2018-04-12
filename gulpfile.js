@@ -1,8 +1,8 @@
 'use strict';
 
 var gulp = require('gulp');
-var litecoreTasks = require('litecore-build');
+var einrcoreTasks = require('einrcore-build');
 
-litecoreTasks('message');
+einrcoreTasks('message');
 
 gulp.task('default', ['lint', 'coverage']);

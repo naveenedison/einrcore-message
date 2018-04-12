@@ -1,4 +1,4 @@
-var litecore = require('litecore-lib');
-litecore.Message = require('./lib/message');
+var einrcore = require('einrcore-lib');
+einrcore.Message = require('./lib/message');
 
-module.exports = litecore.Message;
+module.exports = einrcore.Message;

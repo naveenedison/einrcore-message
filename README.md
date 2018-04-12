@@ -1,32 +1,32 @@
-<img src="http://bitcore.io/css/images/module-message.png" alt="litecore message" height="35">
-# Litecoin Message Verification and Signing for Litecore
+<img src="http://bitcore.io/css/images/module-message.png" alt="einrcore message" height="35">
+# einrcoin Message Verification and Signing for einrcore
 
 
-[![NPM Package](https://img.shields.io/npm/v/litecore-message.svg?style=flat-square)](https://www.npmjs.org/package/litecore-message)
-[![Build Status](https://img.shields.io/travis/litecoin-project/litecore-message.svg?branch=master&style=flat-square)](https://travis-ci.org/litecoin-project/litecore-message)
-[![Coverage Status](https://img.shields.io/coveralls/litecoin-project/litecore-message.svg?style=flat-square)](https://coveralls.io/r/litecoin-project/litecore-message?branch=master)
+[![NPM Package](https://img.shields.io/npm/v/einrcore-message.svg?style=flat-square)](https://www.npmjs.org/package/einrcore-message)
+[![Build Status](https://img.shields.io/travis/naveenedison/einrcore-message.svg?branch=master&style=flat-square)](https://travis-ci.org/naveenedison/einrcore-message)
+[![Coverage Status](https://img.shields.io/coveralls/naveenedison/einrcore-message.svg?style=flat-square)](https://coveralls.io/r/naveenedison/einrcore-message?branch=master)
 
-litecore-message adds support for verifying and signing litecoin messages in [Node.js](http://nodejs.org/) and web browsers.
+einrcore-message adds support for verifying and signing einrcoin messages in [Node.js](http://nodejs.org/) and web browsers.
 
-See [the main litecore repo](https://github.com/litecoin-project/litecore) for more information.
+See [the main einrcore repo](https://github.com/naveenedison/einrcore) for more information.
 
 ## Getting Started
 
 ```sh
-npm install litecore-message
+npm install einrcore-message
 ```
 
 ```sh
-bower install litecore-message
+bower install einrcore-message
 ```
 
 To sign a message:
 
 ```javascript
-var litecore = require('litecore-lib');
-var Message = require('litecore-message');
+var einrcore = require('einrcore-lib');
+var Message = require('einrcore-message');
 
-var privateKey = litecore.PrivateKey.fromWIF('cPBn5A4ikZvBTQ8D7NnvHZYCAxzDZ5Z2TSGW2LkyPiLxqYaJPBW4');
+var privateKey = einrcore.PrivateKey.fromWIF('cPBn5A4ikZvBTQ8D7NnvHZYCAxzDZ5Z2TSGW2LkyPiLxqYaJPBW4');
 var signature = Message('hello, world').sign(privateKey);
 ```
 
@@ -40,12 +40,12 @@ var verified = Message('hello, world').verify(address, signature);
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/litecoin-project/litecore/blob/master/CONTRIBUTING.md) on the main litecore repo for information about how to contribute.
+See [CONTRIBUTING.md](https://github.com/naveenedison/einrcore/blob/master/CONTRIBUTING.md) on the main einrcore repo for information about how to contribute.
 
 ## License
 
-Code released under [the MIT license](https://github.com/litecoin-project/litecore/blob/master/LICENSE).
+Code released under [the MIT license](https://github.com/naveenedison/einrcore/blob/master/LICENSE).
 
 Copyright 2013-2015 BitPay, Inc. Bitcore is a trademark maintained by BitPay, Inc.
-Copyright 2016 The Litecoin Core Developers
+Copyright 2016 The einrcoin Core Developers
 
